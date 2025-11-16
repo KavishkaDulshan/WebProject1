@@ -5,7 +5,7 @@ const Products = () => {
     const intervalsRef = useRef({})
 
     const baseUrl = import.meta.env.BASE_URL
-    
+
     const categories = [
         {
             name: 'Furniture',
