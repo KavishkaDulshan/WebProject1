@@ -12,7 +12,7 @@ const Navbar = () => {
                         {/* Logo Image */}
                         <div className="w-12 h-12 flex-shrink-0 bg-primary p-1.5 rounded">
                             <img
-                                src="/images/raux_logo.png"
+                                src={`${import.meta.env.BASE_URL}images/raux_logo.png`}
                                 alt="Raux Brothers Logo"
                                 className="w-full h-full object-contain brightness-0 invert"
                             />

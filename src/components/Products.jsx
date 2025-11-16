@@ -4,15 +4,17 @@ const Products = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState({})
     const intervalsRef = useRef({})
 
+    const baseUrl = import.meta.env.BASE_URL
+    
     const categories = [
         {
             name: 'Furniture',
             description: 'Timeless pieces crafted with precision and care for living, dining, and garden spaces',
             images: [
-                '/images/ourwork/homecategories/furniture/Furniture-line-1.png',
-                '/images/ourwork/homecategories/furniture/Furniture-dine-7.png',
-                '/images/ourwork/homecategories/furniture/Furniture-sleep-5.png',
-                '/images/ourwork/homecategories/furniture/Furniture_Garden_9.png'
+                `${baseUrl}images/ourwork/homecategories/furniture/Furniture-line-1.png`,
+                `${baseUrl}images/ourwork/homecategories/furniture/Furniture-dine-7.png`,
+                `${baseUrl}images/ourwork/homecategories/furniture/Furniture-sleep-5.png`,
+                `${baseUrl}images/ourwork/homecategories/furniture/Furniture_Garden_9.png`
             ],
             tag: 'LINE • DINE • SLEEP • GARDEN'
         },
@@ -20,10 +22,10 @@ const Products = () => {
             name: 'Furnishing',
             description: 'Exquisite fabrics, cushions, and decorative elements that add character to any space',
             images: [
-                '/images/ourwork/homecategories/furnishing/Fabric_Drapery_5.png',
-                '/images/ourwork/homecategories/furnishing/Wallpaper_4.png',
-                '/images/ourwork/homecategories/furnishing/Rug_carpet_7.png',
-                '/images/ourwork/homecategories/furnishing/Leatherite_9.png'
+                `${baseUrl}images/ourwork/homecategories/furnishing/Fabric_Drapery_5.png`,
+                `${baseUrl}images/ourwork/homecategories/furnishing/Wallpaper_4.png`,
+                `${baseUrl}images/ourwork/homecategories/furnishing/Rug_carpet_7.png`,
+                `${baseUrl}images/ourwork/homecategories/furnishing/Leatherite_9.png`
             ],
             tag: 'ELEGANCE • COMFORT'
         },
@@ -31,9 +33,9 @@ const Products = () => {
             name: 'Elements',
             description: 'Unique decorative pieces and architectural elements that define your interior aesthetic',
             images: [
-                '/images/ourwork/homecategories/elements/wovenware_4.png',
-                '/images/ourwork/homecategories/elements/Porcelain_5.png',
-                '/images/ourwork/homecategories/elements/Decorative_6.png'
+                `${baseUrl}images/ourwork/homecategories/elements/wovenware_4.png`,
+                `${baseUrl}images/ourwork/homecategories/elements/Porcelain_5.png`,
+                `${baseUrl}images/ourwork/homecategories/elements/Decorative_6.png`
             ],
             tag: 'DESIGN • DETAIL'
         },
@@ -41,10 +43,10 @@ const Products = () => {
             name: 'Lighting',
             description: 'Sophisticated lighting solutions that illuminate and enhance your living spaces',
             images: [
-                '/images/ourwork/homecategories/lighting/Lightings_3.png',
-                '/images/ourwork/homecategories/lighting/Lightings_4.png',
-                '/images/ourwork/homecategories/lighting/Lightings_6.png',
-                '/images/ourwork/homecategories/lighting/Lightings_9.png'
+                `${baseUrl}images/ourwork/homecategories/lighting/Lightings_3.png`,
+                `${baseUrl}images/ourwork/homecategories/lighting/Lightings_4.png`,
+                `${baseUrl}images/ourwork/homecategories/lighting/Lightings_6.png`,
+                `${baseUrl}images/ourwork/homecategories/lighting/Lightings_9.png`
             ],
             tag: 'AMBIANCE • STYLE'
         },
@@ -52,10 +54,10 @@ const Products = () => {
             name: 'Art',
             description: 'Curated artworks and sculptures that bring life and personality to your interiors',
             images: [
-                '/images/ourwork/homecategories/art/Art_1.png',
-                '/images/ourwork/homecategories/art/Art_4.png',
-                '/images/ourwork/homecategories/art/Art_6.png',
-                '/images/ourwork/homecategories/art/Art_10.png'
+                `${baseUrl}images/ourwork/homecategories/art/Art_1.png`,
+                `${baseUrl}images/ourwork/homecategories/art/Art_4.png`,
+                `${baseUrl}images/ourwork/homecategories/art/Art_6.png`,
+                `${baseUrl}images/ourwork/homecategories/art/Art_10.png`
             ],
             tag: 'CREATIVITY • EXPRESSION'
         }

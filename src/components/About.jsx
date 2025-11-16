@@ -132,7 +132,7 @@ const About = () => {
                                 muted
                                 playsInline
                             >
-                                <source src="/video/intro.m4v" type="video/mp4" />
+                                <source src={`${import.meta.env.BASE_URL}video/intro.m4v`} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
 
