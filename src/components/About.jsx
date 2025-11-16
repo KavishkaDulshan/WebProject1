@@ -1,8 +1,20 @@
 const About = () => {
     const stats = [
-        { number: '65+', label: 'Years of Excellence' },
-        { number: '1000+', label: 'Projects Completed' },
-        { number: '100%', label: 'Quality Assured' }
+        {
+            number: '65+',
+            label: 'Years of Excellence',
+            icon: 'https://img.icons8.com/ios/100/trophy--v1.png'
+        },
+        {
+            number: '1000+',
+            label: 'Projects Completed',
+            icon: 'https://img.icons8.com/ios/100/briefcase.png'
+        },
+        {
+            number: '100%',
+            label: 'Quality Assured',
+            icon: 'https://img.icons8.com/ios/100/guarantee--v1.png'
+        }
     ]
 
     return (
@@ -57,21 +69,35 @@ const About = () => {
                     </div>
 
                     {/* Stats */}
-                    <div className="grid gap-6">
+                    <div className="grid gap-6 content-start">
                         {stats.map((stat, index) => (
                             <div
                                 key={index}
-                                className="group relative p-10 bg-white border border-gray-100 hover:border-secondary/30 hover:translate-x-3 hover:shadow-2xl transition-all duration-500 overflow-hidden"
+                                className="group relative p-8 bg-white border border-gray-100 hover:border-secondary/30 hover:translate-x-3 hover:shadow-2xl transition-all duration-500 overflow-hidden h-[180px] flex flex-col justify-center"
                             >
                                 <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-secondary to-accent transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                <div className="relative z-10 text-center">
-                                    <h3 className="text-6xl font-logo font-semibold text-primary mb-3 group-hover:text-secondary transition-colors duration-300">
-                                        {stat.number}
-                                    </h3>
-                                    <p className="text-gray-600 text-xs uppercase tracking-[2px] font-semibold">
-                                        {stat.label}
-                                    </p>
+                                <div className="relative z-10">
+                                    {/* Icon */}
+                                    <div className="flex justify-center mb-3">
+                                        <div className="w-14 h-14 flex items-center justify-center rounded-full bg-secondary/10 group-hover:bg-secondary/20 transition-colors duration-300">
+                                            <img
+                                                src={stat.icon}
+                                                alt={stat.label}
+                                                className="w-9 h-9 object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                                                style={{ filter: 'brightness(0) saturate(100%) invert(45%) sepia(15%) saturate(800%) hue-rotate(350deg)' }}
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* Number and Label */}
+                                    <div className="text-center">
+                                        <h3 className="text-5xl font-logo font-semibold text-primary mb-2 group-hover:text-secondary transition-colors duration-300">
+                                            {stat.number}
+                                        </h3>
+                                        <p className="text-gray-600 text-xs uppercase tracking-[2px] font-semibold">
+                                            {stat.label}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         ))}
