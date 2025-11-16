@@ -103,6 +103,51 @@ const About = () => {
                         ))}
                     </div>
                 </div>
+
+                {/* Full-Width Video Section */}
+                <div className="mt-32 relative">
+                    {/* Decorative Elements */}
+                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 flex items-center gap-4">
+                        <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-secondary to-accent"></div>
+                        <span className="text-xs tracking-[4px] uppercase text-secondary font-semibold whitespace-nowrap">
+                            Our Story
+                        </span>
+                        <div className="w-24 h-[2px] bg-gradient-to-l from-transparent via-secondary to-accent"></div>
+                    </div>
+
+                    {/* Video Container */}
+                    <div className="relative group">
+                        {/* Decorative Corner Frames */}
+                        <div className="absolute -top-4 -left-4 w-20 h-20 border-t-2 border-l-2 border-secondary opacity-50 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                        <div className="absolute -top-4 -right-4 w-20 h-20 border-t-2 border-r-2 border-secondary opacity-50 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                        <div className="absolute -bottom-4 -left-4 w-20 h-20 border-b-2 border-l-2 border-secondary opacity-50 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                        <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-2 border-r-2 border-secondary opacity-50 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+
+                        {/* Video with subtle shadow and border */}
+                        <div className="relative overflow-hidden bg-black shadow-2xl border-4 border-white">
+                            <video
+                                className="w-full h-auto"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                            >
+                                <source src="/video/intro.m4v" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+
+                            {/* Overlay gradient on hover */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        </div>
+
+                        {/* Caption */}
+                        <div className="mt-6 text-center">
+                            <p className="text-sm text-gray-600 font-body italic">
+                                Crafting excellence since 1959 • Where tradition meets innovation
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )

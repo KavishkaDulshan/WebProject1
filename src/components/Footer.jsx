@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer className="relative bg-gradient-to-br from-[#f8f6f3] via-[#faf8f5] to-[#f5f3ef] overflow-hidden">
+        <footer className="relative bg-gradient-to-br from-[#f0ebe5] via-[#f5f0ea] to-[#ebe6e0] overflow-hidden">
             {/* Subtle Background Pattern */}
             <div className="absolute inset-0 opacity-[0.03]">
                 <div className="absolute top-0 left-0 right-0 bottom-0"
