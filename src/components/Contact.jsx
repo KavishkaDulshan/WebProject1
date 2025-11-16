@@ -43,83 +43,83 @@ const Contact = () => {
 
             <div className="max-w-7xl mx-auto px-8 relative z-10">
                 {/* Header Section */}
-                <div className="text-center mb-24">
-                    <span className="inline-block text-xs tracking-[4px] uppercase text-secondary/60 mb-4 font-semibold">
+                <div className="text-center mb-16 md:mb-24">
+                    <span className="inline-block text-[10px] md:text-xs tracking-[3px] md:tracking-[4px] uppercase text-secondary/60 mb-3 md:mb-4 font-semibold">
                         Let's Connect
                     </span>
-                    <h2 className="text-5xl md:text-6xl font-display font-bold text-primary mb-6 tracking-tight">
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-primary mb-4 md:mb-6 tracking-tight">
                         Contact Us
                     </h2>
-                    <div className="w-20 h-0.5 bg-secondary mx-auto mb-10"></div>
-                    <p className="text-lg md:text-xl font-serif text-gray-600 max-w-3xl mx-auto leading-relaxed italic">
+                    <div className="w-16 md:w-20 h-0.5 bg-secondary mx-auto mb-6 md:mb-10"></div>
+                    <p className="text-base md:text-lg lg:text-xl font-serif text-gray-600 max-w-3xl mx-auto leading-relaxed italic px-4">
                         Let's bring your vision to life. Reach out to discuss your project or visit our showroom.
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-16">
+                <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
                     {/* Left Column: Contact Form + Social Media */}
-                    <div className="order-2 lg:order-1 space-y-8">
+                    <div className="order-2 lg:order-1 space-y-6 md:space-y-8">
                         {/* Contact Form */}
                         <div className="relative">
                             {/* Decorative corner elements */}
-                            <div className="absolute -top-4 -left-4 w-16 h-16 border-t-2 border-l-2 border-secondary/30"></div>
-                            <div className="absolute -bottom-4 -right-4 w-16 h-16 border-b-2 border-r-2 border-secondary/30"></div>
+                            <div className="absolute -top-3 -left-3 md:-top-4 md:-left-4 w-12 h-12 md:w-16 md:h-16 border-t-2 border-l-2 border-secondary/30"></div>
+                            <div className="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 w-12 h-12 md:w-16 md:h-16 border-b-2 border-r-2 border-secondary/30"></div>
 
-                            <div className="relative bg-gradient-to-br from-gray-50 to-white p-12 border-2 border-gray-100">
-                                <h3 className="text-2xl font-display font-bold text-primary mb-8 tracking-tight">
+                            <div className="relative bg-gradient-to-br from-gray-50 to-white p-6 md:p-10 lg:p-12 border-2 border-gray-100">
+                                <h3 className="text-xl md:text-2xl font-display font-bold text-primary mb-6 md:mb-8 tracking-tight">
                                     Send Us a Message
                                 </h3>
-                                <form className="space-y-6" onSubmit={handleSubmit}>
+                                <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
                                     <div>
-                                        <label className="block text-xs font-semibold text-gray-700 mb-3 tracking-[2px] uppercase">
+                                        <label className="block text-[10px] md:text-xs font-semibold text-gray-700 mb-2 md:mb-3 tracking-[1.5px] md:tracking-[2px] uppercase">
                                             Your Name *
                                         </label>
                                         <input
                                             type="text"
                                             name="name"
                                             placeholder="John Doe"
-                                            className="w-full px-6 py-4 border-2 border-gray-200 focus:border-secondary 
+                                            className="w-full px-4 py-3 md:px-6 md:py-4 border-2 border-gray-200 focus:border-secondary text-sm md:text-base 
                                                 focus:outline-none transition-all duration-300 bg-white font-body
                                                 hover:border-gray-300"
                                             required
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-xs font-semibold text-gray-700 mb-3 tracking-[2px] uppercase">
+                                        <label className="block text-[10px] md:text-xs font-semibold text-gray-700 mb-2 md:mb-3 tracking-[1.5px] md:tracking-[2px] uppercase">
                                             Email Address *
                                         </label>
                                         <input
                                             type="email"
                                             name="email"
                                             placeholder="john@example.com"
-                                            className="w-full px-6 py-4 border-2 border-gray-200 focus:border-secondary 
+                                            className="w-full px-4 py-3 md:px-6 md:py-4 border-2 border-gray-200 focus:border-secondary text-sm md:text-base 
                                                 focus:outline-none transition-all duration-300 bg-white font-body
                                                 hover:border-gray-300"
                                             required
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-xs font-semibold text-gray-700 mb-3 tracking-[2px] uppercase">
+                                        <label className="block text-[10px] md:text-xs font-semibold text-gray-700 mb-2 md:mb-3 tracking-[1.5px] md:tracking-[2px] uppercase">
                                             Phone Number
                                         </label>
                                         <input
                                             type="tel"
                                             name="phone"
                                             placeholder="+94 XX XXX XXXX"
-                                            className="w-full px-6 py-4 border-2 border-gray-200 focus:border-secondary 
+                                            className="w-full px-4 py-3 md:px-6 md:py-4 border-2 border-gray-200 focus:border-secondary text-sm md:text-base 
                                                 focus:outline-none transition-all duration-300 bg-white font-body
                                                 hover:border-gray-300"
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-xs font-semibold text-gray-700 mb-3 tracking-[2px] uppercase">
+                                        <label className="block text-[10px] md:text-xs font-semibold text-gray-700 mb-2 md:mb-3 tracking-[1.5px] md:tracking-[2px] uppercase">
                                             Your Message *
                                         </label>
                                         <textarea
                                             name="message"
-                                            rows="6"
+                                            rows="5"
                                             placeholder="Tell us about your project..."
-                                            className="w-full px-6 py-4 border-2 border-gray-200 focus:border-secondary 
+                                            className="w-full px-4 py-3 md:px-6 md:py-4 border-2 border-gray-200 focus:border-secondary text-sm md:text-base 
                                                 focus:outline-none transition-all duration-300 resize-none bg-white font-body
                                                 hover:border-gray-300"
                                             required
@@ -127,7 +127,7 @@ const Contact = () => {
                                     </div>
                                     <button
                                         type="submit"
-                                        className="group relative w-full px-10 py-5 text-xs font-bold uppercase tracking-[2px] 
+                                        className="group relative w-full px-6 py-4 md:px-10 md:py-5 text-[10px] md:text-xs font-bold uppercase tracking-[1.5px] md:tracking-[2px] 
                                             bg-primary text-white overflow-hidden
                                             transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                                             border-2 border-primary"
@@ -206,10 +206,10 @@ const Contact = () => {
                     </div>
 
                     {/* Right Column: Contact Information */}
-                    <div className="order-1 lg:order-2 space-y-6">
+                    <div className="order-1 lg:order-2 space-y-4 md:space-y-6">
                         {/* Phone Card */}
                         <div className="group relative">
-                            <div className="relative bg-white p-8 
+                            <div className="relative bg-white p-5 md:p-8 
                                 border-2 border-gray-100 hover:border-secondary/30
                                 transition-all duration-500 hover:shadow-2xl overflow-hidden">
 
@@ -217,29 +217,29 @@ const Contact = () => {
                                 <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                                 <div className="relative z-10">
-                                    <div className="flex items-center gap-4 mb-4">
+                                    <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
                                         {/* Premium Icon - Faded Green */}
-                                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-200 to-green-300 
+                                        <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-green-200 to-green-300 
                                             flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                            <svg className="w-8 h-8 text-green-700" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                                            <svg className="w-6 h-6 md:w-8 md:h-8 text-green-700" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <h3 className="text-xs font-bold text-gray-500 uppercase tracking-[2px] mb-1">
+                                            <h3 className="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-[1.5px] md:tracking-[2px] mb-1">
                                                 Call Us
                                             </h3>
-                                            <p className="text-xl font-heading font-bold text-primary group-hover:text-secondary transition-colors duration-300">
+                                            <p className="text-base md:text-xl font-heading font-bold text-primary group-hover:text-secondary transition-colors duration-300">
                                                 Phone
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="pl-20">
+                                    <div className="pl-14 md:pl-20">
                                         <a href="tel:+94112594495"
-                                            className="text-2xl font-semibold text-gray-800 hover:text-secondary transition-colors font-heading block mb-2">
+                                            className="text-lg md:text-2xl font-semibold text-gray-800 hover:text-secondary transition-colors font-heading block mb-1 md:mb-2">
                                             +94 112 594 495
                                         </a>
-                                        <p className="text-sm text-gray-500 font-body">
+                                        <p className="text-xs md:text-sm text-gray-500 font-body">
                                             Monday - Saturday: 9:00 AM - 6:00 PM
                                         </p>
                                     </div>
@@ -255,7 +255,7 @@ const Contact = () => {
 
                         {/* Email Card */}
                         <div className="group relative">
-                            <div className="relative bg-white p-8 
+                            <div className="relative bg-white p-5 md:p-8 
                                 border-2 border-gray-100 hover:border-secondary/30
                                 transition-all duration-500 hover:shadow-2xl overflow-hidden">
 
@@ -263,29 +263,29 @@ const Contact = () => {
                                 <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                                 <div className="relative z-10">
-                                    <div className="flex items-center gap-4 mb-4">
+                                    <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
                                         {/* Premium Icon - Faded Blue */}
-                                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-200 to-blue-300 
+                                        <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-blue-200 to-blue-300 
                                             flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                            <svg className="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                                            <svg className="w-6 h-6 md:w-8 md:h-8 text-blue-700" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <h3 className="text-xs font-bold text-gray-500 uppercase tracking-[2px] mb-1">
+                                            <h3 className="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-[1.5px] md:tracking-[2px] mb-1">
                                                 Email Us
                                             </h3>
-                                            <p className="text-xl font-heading font-bold text-primary group-hover:text-secondary transition-colors duration-300">
+                                            <p className="text-base md:text-xl font-heading font-bold text-primary group-hover:text-secondary transition-colors duration-300">
                                                 Email
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="pl-20">
+                                    <div className="pl-14 md:pl-20">
                                         <a href="mailto:sales@rauxbrothers.com"
-                                            className="text-xl font-semibold text-gray-800 hover:text-secondary transition-colors font-heading block mb-2 break-all">
+                                            className="text-sm md:text-xl font-semibold text-gray-800 hover:text-secondary transition-colors font-heading block mb-1 md:mb-2 break-all">
                                             sales@rauxbrothers.com
                                         </a>
-                                        <p className="text-sm text-gray-500 font-body">
+                                        <p className="text-xs md:text-sm text-gray-500 font-body">
                                             We'll respond within 24 hours
                                         </p>
                                     </div>

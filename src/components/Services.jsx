@@ -27,7 +27,7 @@ const Services = () => {
     ]
 
     return (
-        <section className="pt-16 pb-32 bg-white relative" id="services">
+        <section className="pt-12 pb-20 md:pt-16 md:pb-32 bg-white relative" id="services">
             {/* Subtle Background Pattern */}
             <div className="absolute inset-0 opacity-[0.02]">
                 <div className="absolute top-0 left-0 right-0 bottom-0"
@@ -38,30 +38,30 @@ const Services = () => {
                 ></div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-8 relative z-10">
+            <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
                 {/* Header Section */}
-                <div className="text-center mb-24">
-                    <span className="inline-block text-xs tracking-[4px] uppercase text-secondary/60 mb-4 font-semibold">
+                <div className="text-center mb-16 md:mb-24">
+                    <span className="inline-block text-[10px] md:text-xs tracking-[3px] md:tracking-[4px] uppercase text-secondary/60 mb-3 md:mb-4 font-semibold">
                         Speciality Of Raux Brothers
                     </span>
-                    <h2 className="text-5xl md:text-6xl font-display font-bold text-primary mb-6 tracking-tight">
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-primary mb-4 md:mb-6 tracking-tight">
                         Our Services
                     </h2>
-                    <div className="w-20 h-0.5 bg-secondary mx-auto mb-10"></div>
-                    <p className="text-lg md:text-xl font-serif text-gray-600 max-w-3xl mx-auto leading-relaxed italic">
+                    <div className="w-16 md:w-20 h-0.5 bg-secondary mx-auto mb-6 md:mb-10"></div>
+                    <p className="text-base md:text-lg lg:text-xl font-serif text-gray-600 max-w-3xl mx-auto leading-relaxed italic px-4">
                         We specialize in the art of spaces, bringing a multitude of arts together into a graceful, elegant dance.
                     </p>
                 </div>
 
                 {/* Services Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16 md:mb-20">
                     {services.map((service, index) => (
                         <div
                             key={index}
                             className="group relative"
                         >
                             {/* Card */}
-                            <div className="relative bg-gradient-to-b from-white to-gray-50 p-8 h-full
+                            <div className="relative bg-gradient-to-b from-white to-gray-50 p-6 md:p-8 h-full
                                 border-2 border-gray-100 hover:border-secondary/20
                                 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
 
@@ -125,35 +125,35 @@ const Services = () => {
                 <div className="max-w-5xl mx-auto">
                     <div className="relative overflow-hidden">
                         {/* Background with border */}
-                        <div className="absolute inset-0 border-4 border-secondary/20"></div>
+                        <div className="absolute inset-0 border-2 md:border-4 border-secondary/20"></div>
 
                         {/* Content */}
-                        <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 p-16 md:p-20">
+                        <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 p-8 md:p-16 lg:p-20">
                             {/* Decorative corner elements */}
-                            <div className="absolute top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-secondary"></div>
-                            <div className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-secondary"></div>
-                            <div className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-secondary"></div>
-                            <div className="absolute bottom-0 right-0 w-16 h-16 border-b-4 border-r-4 border-secondary"></div>
+                            <div className="absolute top-0 left-0 w-10 h-10 md:w-16 md:h-16 border-t-2 md:border-t-4 border-l-2 md:border-l-4 border-secondary"></div>
+                            <div className="absolute top-0 right-0 w-10 h-10 md:w-16 md:h-16 border-t-2 md:border-t-4 border-r-2 md:border-r-4 border-secondary"></div>
+                            <div className="absolute bottom-0 left-0 w-10 h-10 md:w-16 md:h-16 border-b-2 md:border-b-4 border-l-2 md:border-l-4 border-secondary"></div>
+                            <div className="absolute bottom-0 right-0 w-10 h-10 md:w-16 md:h-16 border-b-2 md:border-b-4 border-r-2 md:border-r-4 border-secondary"></div>
 
                             <div className="relative z-10 text-center">
                                 {/* Quote mark */}
-                                <div className="text-8xl md:text-9xl text-secondary/20 font-serif leading-none mb-6">"</div>
+                                <div className="text-6xl md:text-8xl lg:text-9xl text-secondary/20 font-serif leading-none mb-4 md:mb-6">"</div>
 
                                 {/* Quote text */}
-                                <p className="text-2xl md:text-3xl font-body text-primary leading-relaxed mb-8 max-w-3xl mx-auto">
+                                <p className="text-lg md:text-2xl lg:text-3xl font-body text-primary leading-relaxed mb-6 md:mb-8 max-w-3xl mx-auto px-4">
                                     As the master painter crafts his own pigments with painstaking care,
                                     so do we diligently build our products from the ground up.
                                 </p>
 
                                 {/* Divider with ornament */}
-                                <div className="flex items-center justify-center gap-4 mb-6">
-                                    <div className="w-12 h-[1px] bg-secondary"></div>
-                                    <div className="w-2 h-2 bg-secondary rotate-45"></div>
-                                    <div className="w-12 h-[1px] bg-secondary"></div>
+                                <div className="flex items-center justify-center gap-3 md:gap-4 mb-4 md:mb-6">
+                                    <div className="w-8 md:w-12 h-[1px] bg-secondary"></div>
+                                    <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-secondary rotate-45"></div>
+                                    <div className="w-8 md:w-12 h-[1px] bg-secondary"></div>
                                 </div>
 
                                 {/* Attribution */}
-                                <p className="text-sm text-secondary font-semibold uppercase tracking-[4px]">
+                                <p className="text-[10px] md:text-sm text-secondary font-semibold uppercase tracking-[2px] md:tracking-[4px]">
                                     Raux Brothers Philosophy
                                 </p>
                             </div>

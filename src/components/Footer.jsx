@@ -12,21 +12,21 @@ const Footer = () => {
             </div>
 
             {/* Main Footer Content */}
-            <div className="max-w-7xl mx-auto px-8 pt-16 pb-12 relative z-10">
+            <div className="max-w-7xl mx-auto px-6 md:px-8 pt-12 pb-8 md:pt-16 md:pb-12 relative z-10">
                 {/* Top Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12 md:mb-16">
                     {/* Company Info */}
                     <div>
-                        <div className="mb-6">
-                            <h3 className="text-4xl font-logo font-semibold text-primary mb-2 tracking-[0.15em] leading-tight">
+                        <div className="mb-5 md:mb-6">
+                            <h3 className="text-3xl md:text-4xl font-logo font-semibold text-primary mb-2 tracking-[0.12em] md:tracking-[0.15em] leading-tight">
                                 RAUX<br />BROTHERS
                             </h3>
-                            <p className="text-xs text-secondary tracking-[0.3em] font-semibold uppercase mb-3">
+                            <p className="text-[10px] md:text-xs text-secondary tracking-[0.25em] md:tracking-[0.3em] font-semibold uppercase mb-3">
                                 Established 1959
                             </p>
-                            <div className="w-16 h-0.5 bg-secondary mb-6"></div>
+                            <div className="w-12 md:w-16 h-0.5 bg-secondary mb-4 md:mb-6"></div>
                         </div>
-                        <p className="text-gray-600 leading-relaxed font-body text-sm">
+                        <p className="text-gray-600 leading-relaxed font-body text-sm md:text-sm">
                             At the heart of our company lies a desire to create furnishings that delight our customers.
                             From resorts to private residencies, we bring timeless elegance to every space.
                         </p>
@@ -34,10 +34,10 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h4 className="text-base font-heading font-bold mb-6 text-primary uppercase tracking-[2px]">
+                        <h4 className="text-sm md:text-base font-heading font-bold mb-4 md:mb-6 text-primary uppercase tracking-[1.5px] md:tracking-[2px]">
                             Contact Us
                         </h4>
-                        <div className="space-y-4">
+                        <div className="space-y-3 md:space-y-4">
                             <div className="flex items-center gap-3 text-gray-700">
                                 <svg className="w-5 h-5 text-secondary flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -69,10 +69,10 @@ const Footer = () => {
 
                     {/* Social Media */}
                     <div>
-                        <h4 className="text-base font-heading font-bold mb-6 text-primary uppercase tracking-[2px]">
+                        <h4 className="text-sm md:text-base font-heading font-bold mb-4 md:mb-6 text-primary uppercase tracking-[1.5px] md:tracking-[2px]">
                             Follow Our Journey
                         </h4>
-                        <div className="flex flex-wrap gap-3">
+                        <div className="flex flex-wrap gap-2.5 md:gap-3">
                             <a href="https://web.facebook.com/RauxBrothersSL/"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -118,10 +118,10 @@ const Footer = () => {
 
                     {/* Quick Links & Newsletter Combined */}
                     <div>
-                        <h4 className="text-base font-heading font-bold mb-6 text-primary uppercase tracking-[2px]">
+                        <h4 className="text-sm md:text-base font-heading font-bold mb-4 md:mb-6 text-primary uppercase tracking-[1.5px] md:tracking-[2px]">
                             Quick Links
                         </h4>
-                        <ul className="space-y-2 mb-8">
+                        <ul className="space-y-1.5 md:space-y-2 mb-6 md:mb-8">
                             {[
                                 { name: 'Home', href: '#home' },
                                 { name: 'About Us', href: '#about' },
@@ -146,10 +146,10 @@ const Footer = () => {
 
                         {/* Newsletter */}
                         <div>
-                            <h4 className="text-base font-heading font-bold mb-4 text-primary uppercase tracking-[2px]">
+                            <h4 className="text-sm md:text-base font-heading font-bold mb-3 md:mb-4 text-primary uppercase tracking-[1.5px] md:tracking-[2px]">
                                 Newsletter
                             </h4>
-                            <p className="text-gray-600 text-xs mb-4 font-body leading-relaxed">
+                            <p className="text-gray-600 text-xs mb-3 md:mb-4 font-body leading-relaxed">
                                 Subscribe for exclusive updates and design inspiration.
                             </p>
                             <form className="space-y-3">
@@ -177,9 +177,9 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="border-t-2 border-gray-100 pt-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-gray-500 text-sm font-body">
+                <div className="border-t-2 border-gray-100 pt-6 md:pt-8">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
+                        <p className="text-gray-500 text-xs md:text-sm font-body text-center md:text-left">
                             © {new Date().getFullYear()} Raux Brothers (Pvt) Ltd. All rights reserved.
                         </p>
                         <div className="flex items-center gap-2 text-xs text-gray-400 font-body italic">

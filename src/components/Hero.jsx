@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section className="h-screen min-h-[500px] max-h-[800px] md:max-h-none relative flex items-center justify-center text-center text-white overflow-hidden" id="home">
+        <section className="min-h-[500px] h-auto md:h-screen md:min-h-[600px] md:max-h-none relative flex items-center justify-center text-center text-white overflow-hidden pt-24 pb-12 md:pt-0 md:pb-0" id="home">
             {/* Background Image - Desktop */}
             <div className="hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
                 backgroundImage: `url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000')`,
@@ -22,17 +22,17 @@ const Hero = () => {
             }}></div>
 
             <div className="relative z-10 max-w-4xl px-6 md:px-8 animate-fadeInUp">
-                <h2 className="text-xs md:text-sm tracking-[3px] md:tracking-[4px] uppercase text-accent mb-3 md:mb-4 opacity-90 font-light">
+                <h2 className="text-xs md:text-sm tracking-[3px] md:tracking-[4px] uppercase text-accent mb-2 md:mb-4 opacity-90 font-light">
                     Shapes of Beauty
                 </h2>
-                <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-normal tracking-[0.18em] mb-6 md:mb-8 leading-[1.2] px-4 md:px-0">
+                <h1 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-display font-normal tracking-[0.12em] md:tracking-[0.18em] mb-4 md:mb-8 leading-[1.2] px-2 md:px-0">
                     SO MUCH MORE THAN<br />JUST FURNITURE
                 </h1>
-                <p className="text-base md:text-lg font-sans font-normal text-white/90 max-w-3xl mx-auto mb-10 md:mb-16 px-4 md:px-0 leading-relaxed">
+                <p className="text-sm md:text-lg font-sans font-normal text-white/90 max-w-3xl mx-auto mb-6 md:mb-16 px-4 md:px-0 leading-relaxed">
                     We specialize in the art of spaces, bringing a multitude of arts together into a graceful, elegant dance.
                 </p>
-                <div className="flex gap-4 md:gap-6 justify-center flex-wrap px-4">
-                    <a href="#portfolio" className="group relative px-8 md:px-12 py-3.5 md:py-4 text-xs md:text-sm font-semibold uppercase tracking-[0.2em] 
+                <div className="flex gap-3 md:gap-6 justify-center flex-wrap px-4">
+                    <a href="#portfolio" className="group relative px-6 md:px-12 py-2.5 md:py-4 text-xs md:text-sm font-semibold uppercase tracking-[0.15em] md:tracking-[0.2em] 
                         bg-white text-primary overflow-hidden
                         hover:shadow-2xl hover:scale-105 active:scale-100 transition-all duration-300
                         inline-flex items-center gap-3">
@@ -42,7 +42,7 @@ const Hero = () => {
                         </svg>
                         <span className="absolute inset-0 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                     </a>
-                    <a href="#contact" className="group relative px-8 md:px-12 py-3.5 md:py-4 text-xs md:text-sm font-semibold uppercase tracking-[0.2em] 
+                    <a href="#contact" className="group relative px-6 md:px-12 py-2.5 md:py-4 text-xs md:text-sm font-semibold uppercase tracking-[0.15em] md:tracking-[0.2em] 
                         bg-transparent text-white border-2 border-white/80 hover:border-white backdrop-blur-sm
                         hover:bg-white hover:text-primary hover:shadow-2xl hover:scale-105 active:scale-100
                         transition-all duration-300 inline-flex items-center gap-3">

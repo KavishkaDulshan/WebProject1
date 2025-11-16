@@ -5,12 +5,12 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm transition-all duration-300 border-b border-gray-100">
-            <div className="max-w-7xl mx-auto px-6 md:px-8">
-                <div className="flex justify-between items-center h-20">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
+                <div className="flex justify-between items-center h-16 md:h-20">
                     {/* Logo */}
-                    <div className="logo cursor-pointer flex items-center gap-3">
+                    <div className="logo cursor-pointer flex items-center gap-2 md:gap-3">
                         {/* Logo Image */}
-                        <div className="w-12 h-12 flex-shrink-0 bg-primary p-1.5 rounded">
+                        <div className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 bg-primary p-1 md:p-1.5 rounded">
                             <img
                                 src={`${import.meta.env.BASE_URL}images/raux_logo.png`}
                                 alt="Raux Brothers Logo"
@@ -18,11 +18,11 @@ const Navbar = () => {
                             />
                         </div>                        {/* Text */}
                         <div>
-                            <h1 className="text-xl md:text-2xl font-logo font-semibold tracking-[0.25em] text-primary 
+                            <h1 className="text-base md:text-xl lg:text-2xl font-logo font-semibold tracking-[0.18em] md:tracking-[0.25em] text-primary 
                                 hover:text-secondary transition-colors duration-300 uppercase leading-tight">
                                 RAUX BROTHERS
                             </h1>
-                            <p className="text-[0.6rem] tracking-[0.35em] text-muted mt-1 font-light uppercase">
+                            <p className="text-[0.5rem] md:text-[0.6rem] tracking-[0.25em] md:tracking-[0.35em] text-muted mt-0.5 md:mt-1 font-light uppercase">
                                 Est. 1959
                             </p>
                         </div>

@@ -18,6 +18,21 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* iOS specific optimizations */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  /* Prevent iOS text size adjustment */
+  -webkit-text-size-adjust: 100%;
+  /* Android specific optimizations */
+  text-size-adjust: 100%;
+}
+
+/* iOS safe area support */
+@supports (padding: env(safe-area-inset-top)) {
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
 
 /* Custom Scrollbar */
