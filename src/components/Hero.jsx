@@ -28,7 +28,7 @@ const Hero = () => {
                 <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-normal tracking-[0.18em] mb-6 md:mb-8 leading-[1.2] px-4 md:px-0">
                     SO MUCH MORE THAN<br />JUST FURNITURE
                 </h1>
-                <p className="text-base md:text-xl leading-[1.75] text-white/92 max-w-2xl mx-auto mb-10 md:mb-16 px-4 md:px-0 font-body font-light tracking-wide italic">
+                <p className="text-base md:text-lg font-sans font-normal text-white/90 max-w-3xl mx-auto mb-10 md:mb-16 px-4 md:px-0 leading-relaxed">
                     We specialize in the art of spaces, bringing a multitude of arts together into a graceful, elegant dance.
                 </p>
                 <div className="flex gap-4 md:gap-6 justify-center flex-wrap px-4">
